@@ -1,0 +1,126 @@
+
+/*Body,HTML*/
+body,html {
+    width:  100%;
+    height:  100%;
+}
+/*End Body,Html*/
+/*Manage-employee*/
+#manage-employee {
+    width:  100%;
+    background: #a5b1c6;
+}
+.hiddendarkness{
+    background: rgba(0, 0, 0, 0.55);
+    opacity: 0;
+    visibility: hidden;
+  }
+/*End Manage-employee*/
+
+/*Manage*/
+.colum {background: #7385c6e6;display: block;padding-left: 0px !important;padding-right: 0!important;padding-top: 17px;padding-bottom: 42px;box-shadow: 13px 10px 5px grey;border-radius: 42px;margin-bottom: 66px;}
+
+.form-group {
+  padding-top: 13px;
+  margin-bottom: 8px!important;
+}
+.manage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.manage h2 {
+  font-size: 28px;
+  font-family: "Times New Roman", Times, serif;
+  color: #e3e3e3;
+  font-size: 34px;
+  text-align: center;
+}
+.manage .form-group span {font-size: 14px;color: red;}
+.btnUpdate{
+  display: none;
+}
+ /*End Manage*/
+
+ /*Display*/
+.btnUpdate {display: none!important;}
+
+th {
+    text-align: center!important;
+}
+
+td {
+    text-align: center;
+    font-size: 15px;
+}/*End Display*/
+/*Styles Darkness*/
+.darkness {
+    background: #000000a6;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+}
+.show {
+   opacity: 1;
+  visibility:visible;
+}
+.darkness 
+
+/*End Darkness*/
+/*Edit Data Employee*/
+  *{
+  padding:0;
+  margin: 0;
+  }
+
+
+#FormManage {
+    margin: auto;
+}
+
+#Form {
+    margin: auto;
+}   
+.EditDataEmployee{
+   /* width: 100%; */
+   /* height: 100%; */
+   display: flex;
+   align-items: center;
+  }  
+.EditDataEmployee #FormEdit {background: #c7c7c7e6;
+  display: block;padding-left: 0px;padding-right: 0px;
+  padding-top: 17px;padding-bottom: 42px;border-radius: 31px;width: 100%;position: fixed;top: 2%;left: 24%;opacity: 0;visibility: hidden;z-index: 2;}
+.EditDataEmployee h2 {
+  text-align: center;
+  font-size: 28px;
+  font-family: "Times New Roman", Times, serif;   
+}
+.EditDataEmployee 
+.EditDataEmployee .form-group span {font-size: 14px;color: red;}
+/*End Edit Data Employee*/
+/*Search*/
+input#search {
+    margin-bottom: 43px;
+}
+.col-sm-1.search {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 7px;
+    padding-right: 0;
+}
+
+i.fas.fa-search {
+    font-size: 22px;
+}
+/*End Search*/
+
+
+

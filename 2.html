@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <table id = "confirm">
+      <tr><th>Firstname</th><td id = "txtFirstname" onclick = "update(this.id)">Adan</td></tr>
+      <tr><th>Lastname</th><td>Smith</td></tr>
+      <tr><th>Username</th><td>ASmith</td></tr>
+      <tr><th>Email</th><td>abc@123.com</td></tr>
+      <tr><th>Phone</th><td>123-456-7890</td></tr>
+    </table>
+
+<script type = "text/javascript">
+  var table=document.getElementById("confirm").childNodes;
+  console.log(table);
+  function update(id){
+    //Get contents off cell clicked
+    // var content = document.getElementById(id).firstChild.value;
+    // console.log(content);
+    //Switch to text input field
+    document.getElementById(id).innerHTML = "<input type = 'text' name = 'txtNewInput' id = 'txtNewInput' value = '" + "ConCAC" + "'/>";
+  }
+</script>
+</body>
+</html>

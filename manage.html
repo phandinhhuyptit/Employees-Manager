@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+	<div id="manage-employee" >
+		<!-- Form Manage -->
+		<div class="manage">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3"></div>
+					<div class="col-sm-6 colum ">
+						<h2>Manage Employee</h2>
+						<div class="row">
+							<form action="" id="FormManage">
+								<div class="form-group row">
+									<div class="col-sm-6">
+										<input type="text" class="form-control" id="lastname" placeholder="Last Name*">
+										<span id="notifylastname"></span>
+									</div>						
+									<div class="col-sm-6">
+										<input type="text" class="form-control" id="name" placeholder="Name*">
+										<span id="notifyname"></span>										
+									</div>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="ID" 
+									placeholder="Employee Code*">
+								<span id="notifyID"></span>
+								</div>
+								<div class="form-group">
+									<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email"> 
+									<span id="notifyemail"></span>
+								</div>
+								<div class="form-group row ">
+									<div class="col-sm-6">
+										<input class="form-control" type="date" min="1979-12-31" id="calendar">
+										<span id="notifycalendar"></span>
+									</div>								
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="Salary" 
+									placeholder="Salary*">
+									<span id="notifySalary"></span>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="WorkDay" 
+									placeholder="WorkDay*">
+									<span id="notifyWorkDay"></span>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="AllWance" 
+									placeholder="AllWance*">
+									<span id="notifyAllWance"></span>
+								</div>								
+								<div class="form-group">
+									<select class="custom-select" id="selectoption">
+										<option selected> Choose Position</option>
+										<option value="1">Boss</option>
+										<option value="2">Employee</option>
+										e<option value="3">Manager</option>
+									</select>
+									<span id="notifyposition"></span>
+								</div>
+								<div class="button">
+									<button id="MoreStaff"type="button" class="btn btn-primary form-control">More Staff</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-sm-3"></div>
+				</div>			
+			</div>
+		</div> <!--End Form Manage -->
+		<!-- Edit Data Employee -->
+		<div class="EditDataEmployee">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3"></div>
+					<div class="col-sm-6 " id="FormEdit">
+						<h2>Manage Employee</h2>
+						<div class="row">
+							<form action="" id="Form">
+								<div class="form-group row">
+									<div class="col-sm-6">
+										<input type="text" class="form-control" id="Editlastname" placeholder="Last Name*">
+										<span id="notifyEditlastname"></span>
+									</div>						
+									<div class="col-sm-6">
+										<input type="text" class="form-control" id="Editname" placeholder="Name*">
+										<span id="notifyEditname"></span>										
+									</div>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="EditID" 
+									placeholder="Employee Code*">
+								<span id="notifyEditID"></span>
+								</div>
+								<div class="form-group">
+									<input type="email" class="form-control" id="Editemail" aria-describedby="emailHelp" placeholder="Enter email"> 
+									<span id="notifyEditemail"></span>
+								</div>
+								<div class="form-group row ">
+									<div class="col-sm-6">
+										<input class="form-control" type="date" min="1979-12-31" id="Editcalendar">
+										<span id="notifyEditcalendar"></span>
+									</div>								
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="EditSalary" 
+									placeholder="Salary*">
+									<span id="notifyEditSalary"></span>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="EditWorkDay" 
+									placeholder="WorkDay*">
+									<span id="notifyEditWorkDay"></span>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="EditAllWance" 
+									placeholder="AllWance*">
+									<span id="notifyEditAllWance"></span>
+								</div>								
+								<div class="form-group">
+									<select class="custom-select" id="Editselectoption">
+										<option selected> Choose Position</option>
+										<option value="1">Boss</option>
+										<option value="2">Employee</option>
+										<option value="3">Manager</option>
+									</select>
+									<span id="Editnotifyposition"></span>
+								</div>
+								<div class="button">
+									<button id="Edit" type="button" class="btn btn-primary form-control">Edit</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-sm-3"></div>
+				</div>			
+			</div>
+		</div> <!-- End Edit Data Employee -->
+		<div id="searchID">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-1 search">
+						<i class="fas fa-search "></i>
+					</div>
+					<div class="col-sm-6">
+					<input type="text" id="search" placeholder="Search For ID*" class="form-control" >
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- DisPlay -->
+		<div class="container" id="display">
+			<table class="table table-hover">
+				<thead>
+					<th>LastName</th>
+					<th>Name</th>
+					<th>Code</th>
+					<th>Email</th>
+					<th>Birthday</th>	
+					<th>Postion</th>
+					<th>Work Day</th>
+					<th>Salary</th>	
+					<th>Allowance</th>
+					<th>Manipulation</th>
+				</thead>
+				<tbody id="theBody">		
+
+
+				</tbody>
+
+			</table>
+		</div> <!-- End Display -->
+		<div class="darkness"></div>
+	</div> <!-- mangae-employee --> 
+	<script type="text/javascript" src="js/ListEmployee.js"></script>
+	<script type="text/javascript" src="js/Employee.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
